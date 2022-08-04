@@ -14,7 +14,7 @@ public class Student {
         if (this == o) return true;
         if (!(o instanceof Student)) return false;
         Student student = (Student) o;
-        return age == student.age && Objects.equals(name, student.name);
+        return age == student.age && name.equals(student.name);
     }
 
     @Override
